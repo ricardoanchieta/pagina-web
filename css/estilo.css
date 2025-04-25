@@ -103,25 +103,19 @@ body {
   
 
 @media (max-width: 600px) {
-    body {
-      padding: 20px;
-      justify-content: flex-start;
-    }
-  
     h1 {
-      font-size: 2em;
-      margin-top: 40px;
+      font-size: 1.8em;
+      margin-top: 60px;
     }
   
     .carousel {
-      width: 90%;
+      width: 100%;
       height: auto;
       aspect-ratio: 1 / 1;
     }
   
     .buttons {
       flex-direction: column;
-      align-items: center;
       gap: 15px;
     }
   
@@ -131,34 +125,13 @@ body {
     }
   
     .contador {
-        position: absolute;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: #fff0f6;
-        padding: 20px 30px;
-        border-radius: 15px;
-        color: #d81b60;
-        font-family: 'Trebuchet MS', sans-serif;
-        font-size: 1.4em;
-        text-align: center;
-        box-shadow: 0 0 20px rgba(216, 27, 96, 0.3);
-        display: none;
-        border: 2px dashed #ec407a;
-        animation: pulse 2s infinite;
-      }
-      
-      .tempo {
-        font-size: 1.8em;
-        font-weight: bold;
-        color: #c2185b;
-      }
-      
-      @keyframes pulse {
-        0% { transform: translateX(-50%) scale(1); }
-        50% { transform: translateX(-50%) scale(1.05); }
-        100% { transform: translateX(-50%) scale(1); }
-      }
+      font-size: 1.2em;
+      padding: 10px 15px;
+    }
+  
+    .tempo {
+      font-size: 1.3em;
+    }
 }
   
   
