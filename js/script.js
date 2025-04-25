@@ -40,12 +40,20 @@ function iniciarContador() {
 
 // Botão "Não" fujão
 const botaoNao = document.getElementById("botaoNao");
-botaoNao.addEventListener("mouseenter", () => {
+
+// Função que move o botão para uma posição aleatória
+function fugir() {
   const maxX = window.innerWidth - botaoNao.offsetWidth;
   const maxY = window.innerHeight - botaoNao.offsetHeight;
+
   const novoX = Math.floor(Math.random() * maxX);
   const novoY = Math.floor(Math.random() * maxY);
+
   botaoNao.style.position = "absolute";
   botaoNao.style.left = `${novoX}px`;
   botaoNao.style.top = `${novoY}px`;
-});
+}
+
+// Eventos para desktop e mobile
+botaoNao.addEventListener("mouseenter", fugir);     // Desktop
+botaoNao.addEventListener("touchstart", fugir);     // Mobile
