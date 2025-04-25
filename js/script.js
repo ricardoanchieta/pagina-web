@@ -8,7 +8,7 @@ setInterval(() => {
 }, 2500);
 
 // Data de início do relacionamento
-const dataInicio = new Date("2025-04-26T00:00:00");
+const dataInicio = new Date("2025-01-25T00:00:00");
 
 function resposta(res) {
   if (res === 'sim') {
